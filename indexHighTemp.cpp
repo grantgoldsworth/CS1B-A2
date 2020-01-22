@@ -1,13 +1,31 @@
-/*******************************************
- * AUTHOR   : GRANT GOLDSWORTH
- * ID	    : 1164709
- * PROJECT  : A2 - WEATHER
- * DUE DATE : 1/22/2020
-*******************************************/
+/******************************************************************************
+ * AUTHOR     : GRANT GOLDSWORTH
+ * STUDENT ID : 1164709
+ * A2         : WEATHER
+ * CLASS      : CS1B
+ * SECTION    : M2 9:30A
+ * DUE DATE   : 1/22/2020
+ ******************************************************************************/
 
 #include "functions.h"
 
-int indexHighTemp(const float temperatures[][2] // 2-dim array, rows = months, col1= high, col2 = low
+/******************************************************************************
+ * FUNCTION - indexHighTemp
+ * ____________________________________________________________________________
+ * This function receives a 2-D array of floats representing temperatures
+ * of months throughout a single year
+ * ===> returns the index of the highest temperature
+ * ____________________________________________________________________________
+ * PRE-CONDITIONS
+ * 		Following must be defined prior to function call:
+ * 			temperatures: an array with 12 rows and 2 columns
+ *
+ * POST-CONDITIONS
+ *		This function will not modify the array argument
+ *		This function will return a number representing an index
+ ******************************************************************************/
+
+int indexHighTemp(const float temperatures[][2] // REF - the array of temperatures
 				 ) {
 	
 	int   highIndex;	// holds the index of the current highest temperature 

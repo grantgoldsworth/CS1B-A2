@@ -1,11 +1,29 @@
-/*******************************************
- * AUTHOR   : GRANT GOLDSWORTH
- * ID	    : 1164709
- * PROJECT  : A2 - WEATHER
- * DUE DATE : 1/22/2020
-*******************************************/
+/******************************************************************************
+ * AUTHOR     : GRANT GOLDSWORTH
+ * STUDENT ID : 1164709
+ * A2         : WEATHER
+ * CLASS      : CS1B
+ * SECTION    : M2 9:30A
+ * DUE DATE   : 1/22/2020
+ ******************************************************************************/
 
 #include "functions.h"
+
+/******************************************************************************
+ * FUNCTION - averageLow
+ * ____________________________________________________________________________
+ * This function receives a 2-D array of floats and calculates the average of
+ * the column representing low temperatures
+ * ===> returns the average of the low temperatures column
+ * ____________________________________________________________________________
+ * PRE-CONDITIONS
+ * 		Following must be defined prior to function call:
+ * 			temperatures: an array of floats
+ *
+ * POST-CONDITIONS
+ *		This function will not modify contents of the temperatures array
+ *		This function will return a float representing an average
+ ******************************************************************************/
 
 float averageLow(const float temperatures[][2] // 2-dim array, rows = months, col1= high, col2 = low
 				) {
